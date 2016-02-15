@@ -10,6 +10,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7DF6F887-BBBA-4927-9EDC-0D7DA1819479}"
 	ProjectSection(SolutionItems) = preProject
 		global.json = global.json
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSTSBuildTask", "VSTSBuildTask\VSTSBuildTask.csproj", "{FCA90B0D-19DB-4C8D-B492-DDD822ADF613}"
