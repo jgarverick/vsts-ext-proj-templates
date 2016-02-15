@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Visual Studio Team Services Build Task</Name>
+    <Description>Creates a custom VSTS Build Task</Description>
+    <Icon>VSOE.ico</Icon>
+    <ProjectType>TypeScript</ProjectType>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>7ecf33eb-da39-420a-91a1-63daaa858100</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>VSOBuildTask</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" >gruntfile.js</ProjectItem>
+      <ProjectItem ReplaceParameters="true" >package.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" >vss-extension.json</ProjectItem>
+      <Folder Name=".vscode">
+        <ProjectItem ReplaceParameters="true" >tasks.json</ProjectItem>
+      </Folder>
+      <Folder Name="tasks">
+        <Folder Name="ExampleTask">
+          <ProjectItem ReplaceParameters="true" >ExampleTask.ps1</ProjectItem>
+          <ProjectItem ReplaceParameters="true" >icon.png</ProjectItem>
+          <ProjectItem ReplaceParameters="true" >task.json</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="test">
+        <ProjectItem ReplaceParameters="true" >TestSpec.js</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

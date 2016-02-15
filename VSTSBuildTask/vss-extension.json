@@ -1,0 +1,81 @@
+{
+  "manifestVersion": 1,
+  "id": "sample-extension",
+  "version": "0.1.0",
+  "name": "Sample Extension",
+  "scopes": [ "vso.work", "vso.work_write" ],
+  "description": "This is the extension file from the contributions guide example on GitHub.  Feel free to add or remove sections as you see fit.",
+  "baseUri": "https://localhost",
+  "publisher": "fabrikam",
+  "public": false,
+  "icons": {
+    "default": "img/logo.png"
+  },
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "tags": [
+    "Sample"
+  ],
+  "links": {
+    "home": {
+      "uri": "https://bit.ly"
+    },
+    "getstarted": {
+      "uri": "https://bit.ly"
+    },
+    "learn": {
+      "uri": "https://bit.ly"
+    },
+    "support": {
+      "uri": "https://bit.ly"
+    },
+    "repository": {
+      "uri": "https://bit.ly"
+    },
+    "issues": {
+      "uri": "https://bit.ly"
+    }
+  },
+  "branding": {
+    "color": "rgb(220, 235, 252)",
+    "theme": "light"
+  },
+  "files": [
+    {
+      "path": "css",
+      "addressable": true
+    },
+    {
+      "path": "img",
+      "addressable": true
+    },
+    {
+      "path": "scripts",
+      "addressable": true
+    },
+    {
+      "path": "index.html",
+      "addressable": true
+    }
+  ],
+  "categories": [
+    "Integrate"
+  ],
+  "contributions": [
+    {
+      "id": "home",
+      "targets": [
+        "ms.vss-work-web.work-hub-group"
+      ],
+      "type": "ms.vss-web.hub",
+      "properties": {
+        "name": "Sample Contribution",
+        "order": 100,
+        "uri": "index.html"
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"
+            xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>VSTS Custom Build/Release Task</Name>
+    <Description>Creates a new custom task for use with Visual Studio Team Services.  Can be used for build, release or both.</Description>
+    <Icon>VSOE.ico</Icon>
+    <TemplateID>ac994f77-fed5-4853-98f6-11c19c59c741</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <AppliesTo>Web,JavaScript,TypeScript</AppliesTo>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <DefaultName>BuildReleaseCustomTask</DefaultName>
+   <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+  </TemplateData>
+  <TemplateContent>
+
+
+      <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\$fileinputname$.ps1">task.ps1</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\task.json">task.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\icon.png">icon.png</ProjectItem>
+    
+
+
+  </TemplateContent>
+</VSTemplate>
