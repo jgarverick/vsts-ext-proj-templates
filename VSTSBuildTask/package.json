@@ -6,8 +6,7 @@
     "grunt-exec": "~0.4.6",
     "jasmine": "~2.3.2",
     "tfx-cli": "^0.3.13",
-    "tsd": "~0.6.5",
-    "vss-sdk": "^0.91.3"
+    "vss-web-extension-sdk": "~1.95.2"
   },
   "name": "",
   "private": true,
