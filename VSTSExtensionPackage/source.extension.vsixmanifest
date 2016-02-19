@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="VSTSExtensionPackage.Josh Garverick.75fb4c69-9081-453d-83e1-99024cdf668b" Version="2.1" Language="en-US" Publisher="Josh Garverick" />
+    <Identity Id="VSTSExtensionPackage.Josh Garverick.75fb4c69-9081-453d-83e1-99024cdf668b" Version="2.1.1" Language="en-US" Publisher="Josh Garverick" />
     <DisplayName>VSTS Extension Project Templates</DisplayName>
     <Description xml:space="preserve">This extension contains Visual Studio project templates supplying you with everything you need to create a Visual Studio Team Services extension or a custom VSTS build/release task.</Description>
     <MoreInfo>https://github.com/jgarverick/vsts-ext-proj-templates</MoreInfo>
