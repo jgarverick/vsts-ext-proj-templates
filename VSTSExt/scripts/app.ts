@@ -1,4 +1,4 @@
-﻿/// <reference path='../node_modules/vss-sdk/typings/VSS.d.ts' />
+﻿/// <reference path='../node_modules/vss-web-extension-sdk/typings/VSS.d.ts' />
 
 class Greeter {
     element: HTMLElement;
