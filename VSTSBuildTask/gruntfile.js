@@ -6,6 +6,7 @@ Click here to learn more. http://go.microsoft.com/fwlink/?LinkID=513275&clcid=0x
 module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON("package.json"),
+        settings: grunt.file.readJSON("settings.tfx.json"),
         exec: {
             update: {
                 command: "npm up --save-dev",
@@ -13,12 +14,12 @@ module.exports = function (grunt) {
                 stderr: true
             },
             publish_task: {
-                command: "tfx build tasks upload --token YOURTOKEN --auth-type pat --task-path ./tasks/ExampleTask --service-url https://your.visualstudio.com.account",
+                command: "tfx build tasks upload --token <%= settings.publish.token %> --auth-type pat --task-path ./tasks/ExampleTask --service-url <%= settings.serviceUrl %>",
                 stdout: true,
                 stderr: true
             },
             publish_ext: {
-                command: "tfx extension publish --token YOURTOKEN --auth-type pat --service-url https://your.visualstudio.com.account",
+                command: "tfx extension publish --token <%= settings.publish.token %> --auth-type pat --service-url <%= settings.serviceUrl %>",
                 stdout: true,
                 stderr: true
             },

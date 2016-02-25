@@ -39,6 +39,7 @@
     <None Include="package.json" />
     <None Include="vss-extension.json"/>
     <None Include="img\logo.png"/>
+    <None Include="settings.tfx.json"/>
 		<Compile Include="Properties\AssemblyInfo.cs" />
 	</ItemGroup>
   <ItemGroup>

@@ -83,6 +83,7 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="readme.md" />
+    <None Include="settings.tfx.json" />
     <None Include="tasks\ExampleTask\task.json" />
     <None Include="tasks\ExampleTask\ExampleTask.ps1" />
     <None Include="vss-extension.json" />
