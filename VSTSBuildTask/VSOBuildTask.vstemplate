@@ -22,6 +22,9 @@
       <Folder Name=".vscode">
         <ProjectItem ReplaceParameters="true" >tasks.json</ProjectItem>
       </Folder>
+      <Folder Name="img">
+        <ProjectItem TargetFileName="logo.png">logo.png</ProjectItem>
+      </Folder>
       <Folder Name="tasks">
         <Folder Name="ExampleTask">
           <ProjectItem ReplaceParameters="true" >ExampleTask.ps1</ProjectItem>
