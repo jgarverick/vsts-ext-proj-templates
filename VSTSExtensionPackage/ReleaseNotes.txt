@@ -1,6 +1,8 @@
 ﻿Release Notes
 =============
 
+* Version 2.2: Updating manifest for build extension to highlight specifics on task contributions; modified gruntfile to allow for task publish, extension package, and extension publish
+* Version 2.1.1: Fix for invalid syntax
 * Version 2.1: Updated reference to vss-sdk to vss-web-extension-sdk
 * Version 2.0: Added new project template for Build/Release tasks, new item template for Build/Release task
 * Version 1.11: Updated to include App Insights telemetry capture example in index.html; updated gruntfile to show full command for tfx publish

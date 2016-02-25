@@ -45,36 +45,21 @@
   },
   "files": [
     {
-      "path": "css",
-      "addressable": true
-    },
-    {
-      "path": "img",
-      "addressable": true
-    },
-    {
-      "path": "scripts",
-      "addressable": true
-    },
-    {
-      "path": "index.html",
-      "addressable": true
+      "path": "tasks/ExampleTask"
     }
   ],
   "categories": [
-    "Integrate"
+    "Build and release"
   ],
   "contributions": [
     {
-      "id": "home",
+      "id": "example-task",
       "targets": [
-        "ms.vss-work-web.work-hub-group"
+        "ms.vss-distributed-task.tasks"
       ],
-      "type": "ms.vss-web.hub",
+      "type": "ms.vss-distributed-task.task",
       "properties": {
-        "name": "Sample Contribution",
-        "order": 100,
-        "uri": "index.html"
+        "name": "Example Task"
       }
     }
   ]

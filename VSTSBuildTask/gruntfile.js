@@ -12,8 +12,18 @@ module.exports = function (grunt) {
                 stdout: true,
                 stderr: true
             },
-            publish: {
-                command: "tfx build tasks upload --token <<YOURTOKEN>> --auth-type pat --task-path ./tasks/ExampleTask --service-url https://your.visualstudio.com.account",
+            publish_task: {
+                command: "tfx build tasks upload --token YOURTOKEN --auth-type pat --task-path ./tasks/ExampleTask --service-url https://your.visualstudio.com.account",
+                stdout: true,
+                stderr: true
+            },
+            publish_ext: {
+                command: "tfx extension publish --token YOURTOKEN --auth-type pat --service-url https://your.visualstudio.com.account",
+                stdout: true,
+                stderr: true
+            },
+            package: {
+                command: "tfx extension create --manifest-globs vss-extension.json",
                 stdout: true,
                 stderr: true
             }
