@@ -26,13 +26,13 @@
       <Folder Name="img">
         <ProjectItem TargetFileName="logo.png">logo.png</ProjectItem>
       </Folder>
-      <Folder Name="tasks">
+      
         <Folder Name="ExampleTask">
           <ProjectItem ReplaceParameters="true" >ExampleTask.ps1</ProjectItem>
           <ProjectItem ReplaceParameters="true" >icon.png</ProjectItem>
           <ProjectItem ReplaceParameters="true" >task.json</ProjectItem>
         </Folder>
-      </Folder>
+      
       <Folder Name="test">
         <ProjectItem ReplaceParameters="true" >TestSpec.js</ProjectItem>
       </Folder>

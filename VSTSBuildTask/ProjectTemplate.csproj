@@ -45,9 +45,9 @@
   <ItemGroup>
     <None Include=".vscode\tasks.json"/>
     <Content Include="test\TestSpec.js"/>
-    <Content Include="tasks\ExampleTask\ExampleTask.ps1"/>
-    <Content Include="tasks\ExampleTask\task.json" />
-    <Content Include="tasks\ExampleTask\icon.png"/>
+    <Content Include="ExampleTask\ExampleTask.ps1"/>
+    <Content Include="ExampleTask\task.json" />
+    <Content Include="ExampleTask\icon.png"/>
   </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
     <TypeScriptRemoveComments>false</TypeScriptRemoveComments>

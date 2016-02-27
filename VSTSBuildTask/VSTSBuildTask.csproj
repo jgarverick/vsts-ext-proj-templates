@@ -84,8 +84,8 @@
     </None>
     <None Include="readme.md" />
     <None Include="settings.tfx.json" />
-    <None Include="tasks\ExampleTask\task.json" />
-    <None Include="tasks\ExampleTask\ExampleTask.ps1" />
+    <None Include="ExampleTask\task.json" />
+    <None Include="ExampleTask\ExampleTask.ps1" />
     <None Include="vss-extension.json" />
   </ItemGroup>
   <ItemGroup>
@@ -96,7 +96,7 @@
   <ItemGroup>
     <Content Include="gruntfile.js" />
     <Content Include="img\logo.PNG" />
-    <Content Include="tasks\ExampleTask\icon.png" />
+    <Content Include="ExampleTask\icon.png" />
     <Content Include="test\TestSpec.js" />
     <Content Include="VSOE.ico" />
   </ItemGroup>

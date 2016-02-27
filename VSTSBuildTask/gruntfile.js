@@ -14,7 +14,7 @@ module.exports = function (grunt) {
                 stderr: true
             },
             publish_task: {
-                command: "tfx build tasks upload --token <%= settings.publish.token %> --auth-type pat --task-path ./tasks/ExampleTask --service-url <%= settings.serviceUrl %>",
+                command: "tfx build tasks upload --token <%= settings.publish.token %> --auth-type pat --task-path ./ExampleTask --service-url <%= settings.serviceUrl %>",
                 stdout: true,
                 stderr: true
             },
@@ -30,7 +30,7 @@ module.exports = function (grunt) {
             }
         },
         jasmine: {
-            src: ["scripts/**/*.js", "sdk/scripts/*.js"],
+            src: ["scripts/**/*.js"],
             specs: "test/**/*[sS]pec.js",
             helpers: "test/helpers/*.js"
         }
