@@ -61,7 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="vss-extension.json" />
-    <None Include="settings.vset.json" />
+    <None Include="settings.tfx.json" />
     <None Include="gruntfile.js" />
   </ItemGroup>
 

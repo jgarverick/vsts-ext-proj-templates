@@ -6,6 +6,7 @@ Click here to learn more. http://go.microsoft.com/fwlink/?LinkID=513275&clcid=0x
 module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON("package.json"),
+        settings: grunt.file.readJSON("settings.tfx.json"),
         exec: {
             package: {
                 command: "tfx extension create --manifest-globs vss-extension.json",
@@ -28,7 +29,7 @@ module.exports = function (grunt) {
                 stderr: true
 			},
             publish: {
-                command: "tfx extension publish --manifest-globs vss-extension.json --share-with <<SHAREACCOUNT>> --token <<YOURACCESSTOKEN>>",
+                command: "tfx extension publish --manifest-globs vss-extension.json --share-with <%= settings.pubhlish.shareWith %> --token <%= settings.publish.token %>",
                 stdout: true,
                 stderr: true
             }

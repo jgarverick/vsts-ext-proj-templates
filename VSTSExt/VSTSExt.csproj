@@ -72,7 +72,7 @@
     <None Include=".vscode\tasks.json" />
     <None Include="AssemblyInfo.cs" />
     <None Include="package.json" />
-    <None Include="settings.vset.json" />
+    <None Include="settings.tfx.json" />
     <None Include="VSTSExtension.csproj">
       <SubType>Designer</SubType>
     </None>

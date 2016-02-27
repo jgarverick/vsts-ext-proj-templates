@@ -45,7 +45,7 @@
   },
   "files": [
     {
-      "path": "tasks/ExampleTask"
+      "path": "ExampleTask"
     }
   ],
   "categories": [

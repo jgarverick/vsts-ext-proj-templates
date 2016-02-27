@@ -18,7 +18,7 @@
       <ProjectItem ReplaceParameters="false" TargetFileName="vss-extension.json">vss-extension.json</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="index.html">index.html</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="package.json">package.json</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="settings.vset.json">settings.vset.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="settings.tfx.json">settings.tfx.json</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="gruntfile.js">gruntfile.js</ProjectItem>
       <Folder Name=".vscode" TargetFolderName=".vscode">
         <ProjectItem ReplaceParameters="true" TargetFileName="tasks.json">tasks.json</ProjectItem>
