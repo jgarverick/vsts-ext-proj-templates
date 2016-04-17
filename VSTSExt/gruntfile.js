@@ -29,7 +29,7 @@ module.exports = function (grunt) {
                 stderr: true
 			},
             publish: {
-                command: "tfx extension publish --manifest-globs vss-extension.json --share-with <%= settings.pubhlish.shareWith %> --token <%= settings.publish.token %>",
+                command: "tfx extension publish --manifest-globs vss-extension.json --share-with <%= settings.publish.shareWith %> --token <%= settings.publish.token %>",
                 stdout: true,
                 stderr: true
             }
