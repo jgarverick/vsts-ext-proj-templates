@@ -76,7 +76,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <VSTemplate Include="DashboardWidgetItem.vstemplate" />
+    <VSTemplate Include="DashboardWidgetItem.vstemplate">
+      <SubType>Designer</SubType>
+    </VSTemplate>
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.png" />
