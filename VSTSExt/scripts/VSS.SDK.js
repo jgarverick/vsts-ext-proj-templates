@@ -367,6 +367,10 @@ var XDM;
             }
             return false;
         };
+        XDMChannel.prototype.error = function (data, errorObj) {
+            var rpcMessage = data;
+            this._error(rpcMessage, errorObj, rpcMessage.handshakeToken);
+        };
         XDMChannel.prototype._error = function (messageObj, errorObj, handshakeToken) {
             // Post back a response as an error which look like this -
             //  {"id": "5", "error": {"code": -32601, "message": "Method not found."}, "jsonrpc": "2.0", }
@@ -613,34 +617,31 @@ var XDM;
             var i, len, channel;
             var rpcMessage;
             if (typeof event.data === "string") {
-                // event.data may not be a valid JSON string, in which case JSON.parse would throw.
                 try {
                     rpcMessage = JSON.parse(event.data);
                 }
                 catch (error) {
-                    if (window.console) {
-                        console.error("JSON.parse failed for string: " + event.data);
-                    }
-                }
-            }
-            else {
-                if (window.console) {
-                    console.error("Expected event.data to be a string");
                 }
             }
             if (rpcMessage) {
-                var handled = false, channelOwnerFound = false;
+                var handled = false;
+                var channelOwner;
                 for (i = 0, len = this._channels.length; i < len; i++) {
                     channel = this._channels[i];
                     if (channel.owns(event.source, event.origin, rpcMessage)) {
-                        // event belongs to this channel. Dispatch the message
-                        channelOwnerFound = true;
+                        // keep a reference to the channel owner found. 
+                        channelOwner = channel;
                         handled = channel.onMessage(rpcMessage, event.origin) || handled;
                     }
                 }
-                if (channelOwnerFound && !handled) {
+                if (!!channelOwner && !handled) {
                     if (window.console) {
                         console.error("No handler found on any channel for message: " + JSON.stringify(rpcMessage));
+                    }
+                    // for instance based proxies, send an error on the channel owning the message to resolve any control creation promises
+                    // on the host frame. 
+                    if (rpcMessage.instanceId) {
+                        channelOwner.error(rpcMessage, "The registered object " + rpcMessage.instanceId + " could not be found.");
                     }
                 }
             }
@@ -739,7 +740,7 @@ var VSS;
      *
      * Usage:
      *
-     * VSS.require(["VSS/Controls", "VSS/Controls/Grids", function(Controls, Grids) {
+     * VSS.require(["VSS/Controls", "VSS/Controls/Grids"], function(Controls, Grids) {
      *    ...
      * });
      *
@@ -760,7 +761,7 @@ var VSS;
         }
         if (loaderConfigured) {
             // Loader already configured, just issue require
-            window.require(modulesArray, callback);
+            issueVssRequire(modulesArray, callback);
         }
         else {
             if (!initOptions) {
@@ -776,11 +777,16 @@ var VSS;
                 }
             }
             ready(function () {
-                window.require(modulesArray, callback);
+                issueVssRequire(modulesArray, callback);
             });
         }
     }
     VSS.require = require;
+    function issueVssRequire(modules, callback) {
+        window.require(["VSS/Bundling"], function (VSS_Bundling) {
+            VSS_Bundling.requireModules(modules, callback);
+        });
+    }
     /**
     * Register a callback that gets called once the initial setup/handshake has completed.
     * If the initial setup is already completed, the callback is invoked at the end of the current call stack.
@@ -1015,6 +1021,9 @@ var VSS;
                 // we are free to add core bundle. otherwise, load core scripts individually.
                 scripts = [{ source: getAbsoluteUrl(hostPageContext.coreReferences.coreScriptsBundle.url, hostRootUri) }];
             }
+            if (hostPageContext.coreReferences.extensionCoreReferences) {
+                scripts.push({ source: getAbsoluteUrl(hostPageContext.coreReferences.extensionCoreReferences.url, hostRootUri) });
+            }
         }
         // Define a new config for extension loader
         var newConfig = {
@@ -1201,3 +1210,4 @@ var VSS;
         }
     }
 })(VSS || (VSS = {}));
+//dependencies=

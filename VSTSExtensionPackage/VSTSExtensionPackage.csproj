@@ -77,6 +77,9 @@
     <ProjectReference Include="..\DashboardWidgetItem\DashboardWidgetItem.csproj">
       <Project>{dfef12f9-b214-407b-9c83-1c9e9d274714}</Project>
       <Name>DashboardWidgetItem</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
     </ProjectReference>
     <ProjectReference Include="..\VSTSExt\VSTSExt.csproj">
       <Project>{AF0C49A0-8128-4ECF-8EC1-AB8CC7DAC69F}</Project>

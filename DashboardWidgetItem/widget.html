@@ -11,14 +11,14 @@
                     usePlatformStyles: true
                 });
 
-                VSS.require(["TFS/Dashboards/WidgetHelpers", "$fileinputname$"], function (WidgetHelpers, widget) {
+                VSS.require(["TFS/Dashboards/WidgetHelpers"], function (WidgetHelpers) {
                     WidgetHelpers.IncludeWidgetStyles();
                     VSS.register("$fileinputname$", function () {
                         return {
                             load: function (widgetSettings) {
                                 /*
                                 Enter your widget code here
-                                ex: widget.getQueryDetails('someDetail');
+                                
                                 */
 
                                 return WidgetHelpers.WidgetStatusHelper.Success();

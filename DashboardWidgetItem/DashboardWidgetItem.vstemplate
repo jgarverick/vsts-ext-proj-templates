@@ -16,7 +16,6 @@
   </TemplateData>
   <TemplateContent>
     <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\$fileinputname$.html">widget.html</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\$fileinputname$.ts">widget.ts</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\icon.png">icon.png</ProjectItem>
   </TemplateContent>
 </VSTemplate>

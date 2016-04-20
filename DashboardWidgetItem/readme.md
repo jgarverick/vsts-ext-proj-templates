@@ -1,0 +1,1 @@
+﻿# VSTS Dashboard Widget Item Template
