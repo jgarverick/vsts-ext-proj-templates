@@ -95,7 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="gruntfile.js" />
-    <Content Include="img\logo.PNG" />
+    <Content Include="img\logo.png" />
     <Content Include="ExampleTask\icon.png" />
     <Content Include="test\TestSpec.js" />
     <Content Include="VSOE.ico" />
