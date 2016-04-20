@@ -1,7 +1,7 @@
 ﻿Release Notes
 =============
 
-* Version 2.4: Added dashboard widget item template
+* Version 2.3.1: Fixed typo in parameter in gruntfile
 * Version 2.3: Added support for parameters with gruntfile
 * Version 2.2: Updating manifest for build extension to highlight specifics on task contributions; modified gruntfile to allow for task publish, extension package, and extension publish
 * Version 2.1.1: Fix for invalid syntax
