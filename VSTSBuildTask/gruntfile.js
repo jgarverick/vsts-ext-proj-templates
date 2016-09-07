@@ -24,7 +24,7 @@ module.exports = function (grunt) {
                 stderr: true
             },
             package: {
-                command: "tfx extension create --manifest-globs vss-extension.json",
+                command: "tfx extension create --manifest-globs <%= settings.package.manifestGlobs %>",
                 stdout: true,
                 stderr: true
             }

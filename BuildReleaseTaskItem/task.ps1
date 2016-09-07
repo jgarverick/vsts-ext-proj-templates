@@ -8,11 +8,14 @@ param(
 )
 
 Write-Host "Starting $fileinputname$"
+Trace-VstsEnteringInvocation $MyInvocation
 
 try {
 
 } catch {
 
+} finally {
+	Trace-VstsLeavingInvocation $MyInvocation
 }
 
 Write-Host "Ending $fileinputname$"

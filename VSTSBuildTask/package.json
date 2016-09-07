@@ -7,7 +7,8 @@
     "jasmine": "^2.4.1",
     "tfx-cli": "^0.3.15",
     "tsd": "^0.6.5",
-    "vss-web-extension-sdk": "^1.98.0"
+    "vss-web-extension-sdk": "^1.98.0",
+    "vsts-task-sdk": "^0.6.4"
   },
   "name": "",
   "private": true,

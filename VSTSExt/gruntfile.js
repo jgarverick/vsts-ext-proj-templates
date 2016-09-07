@@ -9,7 +9,7 @@ module.exports = function (grunt) {
         settings: grunt.file.readJSON("settings.tfx.json"),
         exec: {
             package: {
-                command: "tfx extension create --manifest-globs vss-extension.json",
+                command: "tfx extension create --manifest-globs <%= settings.package.manifestGlobs %>",
                 stdout: true,
                 stderr: true
             },
@@ -29,7 +29,7 @@ module.exports = function (grunt) {
                 stderr: true
 			},
             publish: {
-                command: "tfx extension publish --manifest-globs vss-extension.json --share-with <%= settings.publish.shareWith %> --token <%= settings.publish.token %>",
+                command: "tfx extension publish --manifest-globs <%= settings.package.manifestGlobs %> --share-with <%= settings.publish.shareWith %> --token <%= settings.publish.token %>",
                 stdout: true,
                 stderr: true
             }
