@@ -1,6 +1,7 @@
 ﻿Release Notes
 =============
 
+* Version 2.5: Changed PowerShell execution to PowerShell3 in task.json; included vsts-task-sdk in Build/Release Task template; added Trace-VstsEnteringInvocation and Trace-VstsExitingInvocation to example task PowerShell scripts; added d.ts for RequireJS; updated versions for Grunt, Jasmine (Thanks to David Corbin for testing and Max Knor for update suggestions)
 * Version 2.4: Added dashboard widget item template
 * Version 2.3.1: Fixed typo in parameter in gruntfile
 * Version 2.3: Added support for parameters with gruntfile

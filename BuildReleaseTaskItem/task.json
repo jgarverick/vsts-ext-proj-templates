@@ -40,7 +40,7 @@
   ],
   "instanceNameFormat": "$fileinputname$",
   "execution": {
-    "PowerShell": {
+    "PowerShell3": {
       "target": "$(currentDirectory)\\$fileinputname$.ps1",
       "argumentFormat": "",
       "workingDirectory": "$(currentDirectory)"
