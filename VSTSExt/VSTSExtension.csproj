@@ -57,6 +57,7 @@
     <TypeScriptCompile Include="typings\jquery\jquery.d.ts" />
     <TypeScriptCompile Include="typings\q\q.d.ts" />
     <TypeScriptCompile Include="typings\knockout\knockout.d.ts" />
+<TypeScriptCompile Include="typings\requirejs\require.d.ts" />
     <TypeScriptCompile Include="typings\tsd.d.ts" />
   </ItemGroup>
   <ItemGroup>

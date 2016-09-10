@@ -19,12 +19,12 @@ module.exports = function (grunt) {
                 stderr: true
             },
 			tsdinit:{
-				command: "tsd install jquery q knockout",
+				command: "typings install knockout requirejs",
                 stdout: true,
                 stderr: true
 			},
 			tsdlink:{
-				command: "tsd link",
+				command: "typings init",
                 stdout: true,
                 stderr: true
 			},

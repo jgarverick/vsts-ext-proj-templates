@@ -46,6 +46,9 @@
         <Folder Name="q" TargetFolderName="q">
           <ProjectItem ReplaceParameters="true" TargetFileName="Q.d.ts">Q.d.ts</ProjectItem>
         </Folder>
+<Folder Name="requirejs" TargetFolderName="requirejs">
+          <ProjectItem ReplaceParameters="true" TargetFileName="require.d.ts">require.d.ts</ProjectItem>
+        </Folder>
         <ProjectItem ReplaceParameters="true" TargetFileName="tsd.d.ts">tsd.d.ts</ProjectItem>
 
       </Folder>
