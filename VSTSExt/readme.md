@@ -9,6 +9,7 @@
 - An app.ts TypeScript file, which gives you a very simple timekeeping module
 - A sample logo file (replace this with the logo you wish to use for your extension)
 - A sample Jasmine spec file (`test/TestSpec.js`) to help get you started with the Jasmine testing framework (special thanks to [Niel Zeeman](http://blogs.msdn.com/b/willy-peter_schaub/archive/2013/11/01/introducing-the-visual-studio-alm-rangers-niel-zeeman.aspx))
+- `tfignore` and `gitignore` files that you can use to exclude the `settings.tfx.json` settings file.  This will safeguard you against accidentally checking in your personal access token or other sensitive VS Marketplace credentials.
 
 This has been updated to be inline with the [M95](https://www.visualstudio.com/en-us/integrate/extensions/support/release-notes) release, which includes support for VSTS hosting of static content (.html,.css,.js) and the use of the tfx utility.
 

@@ -76,6 +76,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".tfignore">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <None Include=".vscode\tasks.json" />
     <None Include="AssemblyInfo.cs" />
     <None Include="package.json" />
@@ -94,6 +97,9 @@
     </VSTemplate>
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".gitignore">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <Content Include="gruntfile.js" />
     <Content Include="img\logo.png" />
     <Content Include="ExampleTask\icon.png" />

@@ -18,6 +18,8 @@
       <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" >gruntfile.js</ProjectItem>
       <ProjectItem ReplaceParameters="true" >package.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName=".gitignore">.gitignore</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName=".tfignore">.tfignore</ProjectItem>
       <ProjectItem ReplaceParameters="true" >vss-extension.json</ProjectItem>
       <ProjectItem TargetFileName="settings.tfx.json">settings.tfx.json</ProjectItem>
       <Folder Name=".vscode">
