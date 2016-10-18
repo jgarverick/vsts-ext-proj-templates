@@ -9,6 +9,7 @@
 - A `gruntfile.js` file to leverage GruntJS for running the `tfx` package and publish commands
 - A sample logo file (replace this with the logo you wish to use for your extension)
 - A sample Jasmine spec file (`test/TestSpec.js`) to help get you started with the Jasmine testing framework (special thanks to [Niel Zeeman](http://blogs.msdn.com/b/willy-peter_schaub/archive/2013/11/01/introducing-the-visual-studio-alm-rangers-niel-zeeman.aspx))
+- `tfignore` and `gitignore` files that you can use to exclude the `settings.tfx.json` settings file.  This will safeguard you against accidentally checking in your personal access token or other sensitive VS Marketplace credentials.
 
 ####If you run into any issues with the version of Node that is installed with the Node.js Tools for Visual Studio, you can change the path to Node by going into Tools -> Options -> Projects and Solutions -> External Web Tools.
 

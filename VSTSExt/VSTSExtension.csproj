@@ -51,6 +51,8 @@
     <Content Include="test\TestSpec.js" />
     <None Include="readme.md" />
     <None Include="package.json"/>
+    <None Include=".gitignore" />
+    <None Include=".tfignore" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="scripts\app.ts" />
