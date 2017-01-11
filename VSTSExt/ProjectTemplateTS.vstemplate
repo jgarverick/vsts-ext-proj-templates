@@ -38,22 +38,6 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="app.ts">app.ts</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="VSS.SDK.js">VSS.SDK.js</ProjectItem>
       </Folder>
-      <Folder Name="typings" TargetFolderName="typings">
-        <Folder Name="jquery" TargetFolderName="jquery">
-          <ProjectItem ReplaceParameters="true" TargetFileName="jquery.d.ts">jquery.d.ts</ProjectItem>
-        </Folder>
-        <Folder Name="knockout" TargetFolderName="knockout">
-          <ProjectItem ReplaceParameters="true" TargetFileName="knockout.d.ts">knockout.d.ts</ProjectItem>
-        </Folder>
-        <Folder Name="q" TargetFolderName="q">
-          <ProjectItem ReplaceParameters="true" TargetFileName="Q.d.ts">Q.d.ts</ProjectItem>
-        </Folder>
-<Folder Name="requirejs" TargetFolderName="requirejs">
-          <ProjectItem ReplaceParameters="true" TargetFileName="require.d.ts">require.d.ts</ProjectItem>
-        </Folder>
-        <ProjectItem ReplaceParameters="true" TargetFileName="tsd.d.ts">tsd.d.ts</ProjectItem>
-
-      </Folder>
       <ProjectItem ReplaceParameters="false" TargetFileName="readme.md">readme.md</ProjectItem>
     </Project>
   </TemplateContent>

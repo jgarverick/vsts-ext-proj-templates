@@ -45,20 +45,19 @@
   },
   "files": [
     {
-      "path": "css",
-      "addressable": true
+      "path": "dist",
+      "addressable": true,
+      "packagePath": "/"
     },
     {
-      "path": "img",
-      "addressable": true
+      "path": "static",
+      "addressable": true,
+      "packagePath": "/"
     },
     {
-      "path": "scripts",
-      "addressable": true
-    },
-    {
-      "path": "index.html",
-      "addressable": true
+      "path": "node_modules/vss-web-extension-sdk/lib",
+      "addressable": true,
+      "packagePath": "lib"
     }
   ],
   "categories": [

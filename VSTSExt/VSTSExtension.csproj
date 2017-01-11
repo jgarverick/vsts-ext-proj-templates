@@ -12,7 +12,7 @@
 		<AssemblyName>$safeprojectname$</AssemblyName>
 		<TargetFrameworkVersion>v$targetframeworkversion$</TargetFrameworkVersion>
 		<FileAlignment>512</FileAlignment>
-    <TypeScriptToolsVersion>1.7.4</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>2.0.6</TypeScriptToolsVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort>44300</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
@@ -56,11 +56,6 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="scripts\app.ts" />
-    <TypeScriptCompile Include="typings\jquery\jquery.d.ts" />
-    <TypeScriptCompile Include="typings\q\q.d.ts" />
-    <TypeScriptCompile Include="typings\knockout\knockout.d.ts" />
-<TypeScriptCompile Include="typings\requirejs\require.d.ts" />
-    <TypeScriptCompile Include="typings\tsd.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <None Include="vss-extension.json" />
