@@ -9,7 +9,7 @@
   "publisher": "fabrikam",
   "public": false,
   "icons": {
-    "default": "img/logo.png"
+    "default": "static/images/logo.png"
   },
   "targets": [
     {
