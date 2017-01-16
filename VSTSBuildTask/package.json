@@ -18,7 +18,7 @@
   "dependencies": {
     "@types/jquery": "^2.0.34",
     "@types/q": "0.0.32",
-    "vss-web-extension-sdk": "^2.109.1"
+    "vsts-task-sdk": "^0.6.4"
   },
   "name": "",
   "private": true,

@@ -29,6 +29,12 @@ module.exports = function (grunt) {
                 stderr: true
             }
         },
+        copy: {
+            main: {
+                files: [
+                    { expand: true, cwd: 'node_modules/vsts-task-sdk/', src: ['VstsTaskSdk/**'], dest: 'ExampleTask/ps_modules' }]
+            }
+        },
         jasmine: {
             src: ["scripts/**/*.js"],
             specs: "test/**/*[sS]pec.js",

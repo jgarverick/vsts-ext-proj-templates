@@ -7,7 +7,7 @@
     <Description>Creates a new custom task for use with Visual Studio Team Services.  Can be used for build, release or both.</Description>
     <Icon>VSOE.ico</Icon>
     <TemplateID>ac994f77-fed5-4853-98f6-11c19c59c741</TemplateID>
-    <ProjectType>CSharp</ProjectType>
+    <ProjectType>PowerShell</ProjectType>
     <AppliesTo>Web,JavaScript,TypeScript</AppliesTo>
     <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>

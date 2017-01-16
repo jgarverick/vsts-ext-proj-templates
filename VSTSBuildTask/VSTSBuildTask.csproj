@@ -83,13 +83,14 @@
     <None Include=".vscode\tasks.json" />
     <None Include="AssemblyInfo.cs" />
     <None Include="package.json" />
+    <None Include="packages.config" />
     <None Include="ProjectTemplate.csproj">
       <SubType>Designer</SubType>
     </None>
     <None Include="readme.md" />
     <None Include="settings.tfx.json" />
     <None Include="ExampleTask\task.json" />
-    <None Include="ExampleTask\ExampleTask.ps1" />
+    <None Include="ExampleTask\task.ps1" />
     <None Include="vss-extension.json" />
   </ItemGroup>
   <ItemGroup>
