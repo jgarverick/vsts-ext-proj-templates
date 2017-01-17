@@ -55,10 +55,13 @@
 	</ItemGroup>
   <ItemGroup>
     <None Include=".vscode\tasks.json"/>
-    <Content Include="test\TestSpec.js"/>
+    <Content Include="test\ExampleTask.Tests.ps1"/>
+    <Content Include="test\deploy\TestExample.ps1"/>
+    <Content Include="test\deploy\TestExample.Tests.ps1"/>
     <Content Include="ExampleTask\task.ps1"/>
     <Content Include="ExampleTask\task.json" />
     <Content Include="ExampleTask\icon.png"/>
+    <Folder Include="ExampleTask\ps_modules"/>
   </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
     <TypeScriptRemoveComments>false</TypeScriptRemoveComments>

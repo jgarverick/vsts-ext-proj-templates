@@ -41,16 +41,10 @@ module.exports = function (grunt) {
                   { expand: true, flatten: true, src: ['node_modules/vss-web-extension-sdk/lib/VSS.SDK.js'], dest: 'src/', filter: 'isFile' }
                 ]
             }
-        },
-        jasmine: {
-            src: ["scripts/**/*.js", "sdk/scripts/*.js"],
-            specs: "test/**/*[sS]pec.js",
-            helpers: "test/helpers/*.js"
         }
     });
 
     grunt.loadNpmTasks("grunt-exec");
     grunt.loadNpmTasks("grunt-contrib-copy");
-    grunt.loadNpmTasks("grunt-contrib-jasmine");
 
 };

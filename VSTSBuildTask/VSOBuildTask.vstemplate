@@ -31,13 +31,18 @@
       </Folder>
       
         <Folder Name="ExampleTask" >
+          <Folder Name="ps_modules"></Folder>
           <ProjectItem ReplaceParameters="true" TargetFileName="task.ps1" >task.ps1</ProjectItem>
           <ProjectItem ReplaceParameters="true" >icon.png</ProjectItem>
           <ProjectItem ReplaceParameters="true" >task.json</ProjectItem>
         </Folder>
       
       <Folder Name="test">
-        <ProjectItem ReplaceParameters="true" >TestSpec.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" >ExampleTask.Tests.ps1</ProjectItem>
+        <Folder Name="deploy">
+          <ProjectItem ReplaceParameters="true" >TestExample.ps1</ProjectItem>
+          <ProjectItem ReplaceParameters="true" >TestExample.Tests.ps1</ProjectItem>
+        </Folder>
       </Folder>
     </Project>
   </TemplateContent>
