@@ -1,6 +1,7 @@
 ﻿Release Notes
 =============
 
+* Version 3.0: Revamped template structure based on new guidance (https://github.com/Microsoft/vss-web-extension-sdk) from Microsoft on extension development.  Created new templates for PowerShell and TypeScript for build tasks.  Updated TypeScript version to TypeScript 2.
 * Version 2.6: Added TF and Git ignore files (Jesse Houwing); fixed issue with require (changed to VSS.require, thanks Colin Dembovsky for the catch)
 * Version 2.5: Changed PowerShell execution to PowerShell3 in task.json; included vsts-task-sdk in Build/Release Task template; added Trace-VstsEnteringInvocation and Trace-VstsExitingInvocation to example task PowerShell scripts; added d.ts for RequireJS; updated versions for Grunt, Jasmine (Thanks to David Corbin for testing and Max Knor for update suggestions)
 * Version 2.4: Added dashboard widget item template
