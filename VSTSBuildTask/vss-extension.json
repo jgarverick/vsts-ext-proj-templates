@@ -46,7 +46,13 @@
   "files": [
     {
       "path": "ExampleTask"
-    }
+    },
+    {
+        "path": "node_modules/vss-web-extension-sdk/lib",
+        "addressable": true,
+        "packagePath": "lib"
+      }
+    
   ],
   "categories": [
     "Build and release"

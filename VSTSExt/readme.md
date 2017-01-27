@@ -1,5 +1,6 @@
 #Welcome to Visual Studio Team Services Extensions!
 
+###Please note that version 3.0 contains changes that could break existing project structures.  It also leverages TypeScript 2.0.
 ###This project template was put together to help you get started quickly with VSTS extension development.  The following components are included:
 
 - The `VSS.SDK.js` file, required for JavaScript interaction with VSTS
@@ -11,7 +12,7 @@
 - A sample Jasmine spec file (`test/TestSpec.js`) to help get you started with the Jasmine testing framework (special thanks to [Niel Zeeman](http://blogs.msdn.com/b/willy-peter_schaub/archive/2013/11/01/introducing-the-visual-studio-alm-rangers-niel-zeeman.aspx))
 - `tfignore` and `gitignore` files that you can use to exclude the `settings.tfx.json` settings file.  This will safeguard you against accidentally checking in your personal access token or other sensitive VS Marketplace credentials.
 
-This has been updated to be inline with the [M95](https://www.visualstudio.com/en-us/integrate/extensions/support/release-notes) release, which includes support for VSTS hosting of static content (.html,.css,.js) and the use of the tfx utility.
+This has been updated to be inline with the [M109](https://www.visualstudio.com/en-us/integrate/extensions/support/release-notes) release, which includes support for VSTS hosting of static content (.html,.css,.js) and the use of the tfx utility.
 
 ####If you run into any issues with the version of Node that is installed with the Node.js Tools for Visual Studio, you can change the path to Node by going into Tools -> Options -> Projects and Solutions -> External Web Tools.
 

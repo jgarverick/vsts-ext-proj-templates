@@ -1,0 +1,1 @@
+﻿# VSTS Build/Release Task Item Template

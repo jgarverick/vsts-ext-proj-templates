@@ -6,7 +6,6 @@
 		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <ProjectGuid>$guid1$</ProjectGuid>
-    <TypeScriptToolsVersion>1.7.4</TypeScriptToolsVersion>
 		<OutputType>Library</OutputType>
 		<AppDesignerFolder>Properties</AppDesignerFolder>
 		<RootNamespace>$safeprojectname$</RootNamespace>
@@ -34,9 +33,19 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.CoreUtility">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
 	<ItemGroup>
 		<None Include="gruntfile.js" />
     <None Include="package.json" />
+    <None Include="packages.config" />
     <None Include="vss-extension.json"/>
     <None Include="img\logo.png"/>
     <None Include="settings.tfx.json"/>
@@ -46,10 +55,13 @@
 	</ItemGroup>
   <ItemGroup>
     <None Include=".vscode\tasks.json"/>
-    <Content Include="test\TestSpec.js"/>
-    <Content Include="ExampleTask\ExampleTask.ps1"/>
+    <Content Include="test\ExampleTask.Tests.ps1"/>
+    <Content Include="test\deploy\TestExample.ps1"/>
+    <Content Include="test\deploy\TestExample.Tests.ps1"/>
+    <Content Include="ExampleTask\task.ps1"/>
     <Content Include="ExampleTask\task.json" />
     <Content Include="ExampleTask\icon.png"/>
+    <Folder Include="ExampleTask\ps_modules"/>
   </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
     <TypeScriptRemoveComments>false</TypeScriptRemoveComments>

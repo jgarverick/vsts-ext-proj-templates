@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>14.0</OldToolsVersion>
-    <UpgradeBackupLocation />
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -82,13 +83,16 @@
     <None Include=".vscode\tasks.json" />
     <None Include="AssemblyInfo.cs" />
     <None Include="package.json" />
+    <None Include="packages.config" />
     <None Include="ProjectTemplate.csproj">
       <SubType>Designer</SubType>
     </None>
     <None Include="readme.md" />
     <None Include="settings.tfx.json" />
     <None Include="ExampleTask\task.json" />
-    <None Include="ExampleTask\ExampleTask.ps1" />
+    <None Include="ExampleTask\task.ps1" />
+    <None Include="test\deploy\TestExample.ps1" />
+    <None Include="test\deploy\TestExample.Tests.ps1" />
     <None Include="vss-extension.json" />
   </ItemGroup>
   <ItemGroup>
@@ -103,10 +107,12 @@
     <Content Include="gruntfile.js" />
     <Content Include="img\logo.png" />
     <Content Include="ExampleTask\icon.png" />
-    <Content Include="test\TestSpec.js" />
+    <None Include="test\ExampleTask.Tests.ps1" />
     <Content Include="VSOE.ico" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ExampleTask\ps_modules\" />
+  </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
       <Visible>False</Visible>
