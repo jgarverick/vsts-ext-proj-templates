@@ -2,15 +2,14 @@
 # $fileinputname$.ps1
 #
 [CmdletBinding(DefaultParameterSetName = 'None')]
-param(
-	[string][Parameter(Mandatory=$true)] $variable1, 
-	[string] $variable2
-)
+param()
 
 Write-Host "Starting $fileinputname$"
 Trace-VstsEnteringInvocation $MyInvocation
 
 try {
+    $variable1         = Get-VstsInput -Name variable1 -Require
+    $variable2         = Get-VstsInput -Name variable2 
 
 } catch {
 
