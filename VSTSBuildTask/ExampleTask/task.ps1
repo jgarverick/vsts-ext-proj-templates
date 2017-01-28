@@ -11,7 +11,8 @@ Write-Host "Starting ExampleTask"
 Trace-VstsEnteringInvocation $MyInvocation
 
 try {
-
+	$variable1 = Get-VstsInput -Name variable1 -Require
+	$variable2 = Get-VstsInput -Name variable2
 } catch {
 
 } finally {
