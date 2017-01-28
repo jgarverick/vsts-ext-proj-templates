@@ -1,4 +1,4 @@
-﻿/// <binding ProjectOpened='exec:update' />
+﻿/// <binding ProjectOpened='exec:update, copy:main' />
 /*
 This file in the main entry point for defining grunt tasks and using grunt plugins.
 Click here to learn more. http://go.microsoft.com/fwlink/?LinkID=513275&clcid=0x409
@@ -27,6 +27,12 @@ module.exports = function (grunt) {
                 command: "tfx extension create --manifest-globs <%= settings.package.manifestGlobs %>",
                 stdout: true,
                 stderr: true
+            }
+        },
+        copy: {
+            main: {
+                files: [
+                    { expand: true, cwd: 'node_modules/vsts-task-sdk/', src: ['VstsTaskSdk/**'], dest: 'ExampleTask/ps_modules' }]
             }
         },
         jasmine: {

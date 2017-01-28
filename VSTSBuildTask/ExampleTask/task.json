@@ -41,7 +41,7 @@
   "instanceNameFormat": "ExampleTask",
   "execution": {
     "PowerShell3": {
-      "target": "$(currentDirectory)\\ExampleTask.ps1",
+      "target": "$(currentDirectory)\\task.ps1",
       "argumentFormat": "",
       "workingDirectory": "$(currentDirectory)"
     }

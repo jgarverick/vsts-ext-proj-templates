@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26020.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSTSExtensionPackage", "VSTSExtensionPackage\VSTSExtensionPackage.csproj", "{EC7CC6D8-04F1-4A5E-872D-72DF5967B7ED}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildReleaseTaskItem", "BuildReleaseTaskItem\BuildReleaseTaskItem.csproj", "{2A0C632A-49DF-4C55-B591-094AD237755F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DashboardWidgetItem", "DashboardWidgetItem\DashboardWidgetItem.csproj", "{DFEF12F9-B214-407B-9C83-1C9E9D274714}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildReleaseTaskItemTS", "BuildReleaseTaskItemTS\BuildReleaseTaskItemTS.csproj", "{F3E37F69-8664-48A3-B1A3-145148487785}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{DFEF12F9-B214-407B-9C83-1C9E9D274714}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFEF12F9-B214-407B-9C83-1C9E9D274714}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFEF12F9-B214-407B-9C83-1C9E9D274714}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3E37F69-8664-48A3-B1A3-145148487785}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3E37F69-8664-48A3-B1A3-145148487785}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3E37F69-8664-48A3-B1A3-145148487785}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3E37F69-8664-48A3-B1A3-145148487785}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

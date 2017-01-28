@@ -15,44 +15,34 @@
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="VSTSExtension.csproj" File="VSTSExtension.csproj" ReplaceParameters="true">
-      <ProjectItem ReplaceParameters="false" TargetFileName="vss-extension.json">vss-extension.json</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="index.html">index.html</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="vss-extension.json">vss-extension.json</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="package.json">package.json</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="settings.tfx.json">settings.tfx.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="tsconfig.json">tsconfig.json</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName=".gitignore">.gitignore</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName=".tfignore">.tfignore</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="gruntfile.js">gruntfile.js</ProjectItem>
       <Folder Name=".vscode" TargetFolderName=".vscode">
         <ProjectItem ReplaceParameters="true" TargetFileName="tasks.json">tasks.json</ProjectItem>
       </Folder>
-      <Folder Name="css" TargetFolderName="css">
-        <ProjectItem ReplaceParameters="true" TargetFileName="app.css">app.css</ProjectItem>
+      <Folder Name="static" TargetFolderName="static">
+        <Folder Name="css" TargetFolderName="css">
+          <ProjectItem ReplaceParameters="true" TargetFileName="app.css">app.css</ProjectItem>
+        </Folder>
+        <Folder Name="images" TargetFolderName="images">
+          <ProjectItem ReplaceParameters="true" TargetFileName="logo.png">logo.png</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="index.html">index.html</ProjectItem>
       </Folder>
-      <Folder Name="img" TargetFolderName="img">
-        <ProjectItem ReplaceParameters="true" TargetFileName="logo.png">logo.png</ProjectItem>
-      </Folder>
+
       <Folder Name="test" TargetFolderName="test">
         <ProjectItem ReplaceParameters="true" TargetFileName="TestSpec.js">TestSpec.js</ProjectItem>
       </Folder>
-      <Folder Name="scripts" TargetFolderName="scripts">
-        <ProjectItem ReplaceParameters="true" TargetFileName="app.ts">app.ts</ProjectItem>
+      <Folder Name="src" TargetFolderName="src">
+        <Folder Name="my-module" TargetFolderName="module" >
+          <ProjectItem ReplaceParameters="true" TargetFileName="app.ts">app.ts</ProjectItem>
+        </Folder>
         <ProjectItem ReplaceParameters="true" TargetFileName="VSS.SDK.js">VSS.SDK.js</ProjectItem>
-      </Folder>
-      <Folder Name="typings" TargetFolderName="typings">
-        <Folder Name="jquery" TargetFolderName="jquery">
-          <ProjectItem ReplaceParameters="true" TargetFileName="jquery.d.ts">jquery.d.ts</ProjectItem>
-        </Folder>
-        <Folder Name="knockout" TargetFolderName="knockout">
-          <ProjectItem ReplaceParameters="true" TargetFileName="knockout.d.ts">knockout.d.ts</ProjectItem>
-        </Folder>
-        <Folder Name="q" TargetFolderName="q">
-          <ProjectItem ReplaceParameters="true" TargetFileName="Q.d.ts">Q.d.ts</ProjectItem>
-        </Folder>
-<Folder Name="requirejs" TargetFolderName="requirejs">
-          <ProjectItem ReplaceParameters="true" TargetFileName="require.d.ts">require.d.ts</ProjectItem>
-        </Folder>
-        <ProjectItem ReplaceParameters="true" TargetFileName="tsd.d.ts">tsd.d.ts</ProjectItem>
-
       </Folder>
       <ProjectItem ReplaceParameters="false" TargetFileName="readme.md">readme.md</ProjectItem>
     </Project>
