@@ -1,4 +1,4 @@
-﻿#
+#
 # ExampleTask.ps1
 #
 [CmdletBinding(DefaultParameterSetName = 'None')]
