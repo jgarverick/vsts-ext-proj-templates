@@ -74,6 +74,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BuildReleaseTaskItemTS\BuildReleaseTaskItemTS.csproj">
+      <Project>{F3E37F69-8664-48A3-B1A3-145148487785}</Project>
+      <Name>BuildReleaseTaskItemTS</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
     <ProjectReference Include="..\BuildReleaseTaskItem\BuildReleaseTaskItem.csproj">
       <Project>{2A0C632A-49DF-4C55-B591-094AD237755F}</Project>
       <Name>BuildReleaseTaskItem</Name>
@@ -85,6 +92,13 @@
       <Project>{dfef12f9-b214-407b-9c83-1c9e9d274714}</Project>
       <Name>DashboardWidgetItem</Name>
       <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\VSTSBuildTaskTS\VSTSBuildTaskTS.csproj">
+      <Project>{FE369FF8-3A19-4815-9777-D1CC3CAA45ED}</Project>
+      <Name>VSTSBuildTaskTS</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
     </ProjectReference>

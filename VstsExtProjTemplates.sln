@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DashboardWidgetItem", "Dash
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildReleaseTaskItemTS", "BuildReleaseTaskItemTS\BuildReleaseTaskItemTS.csproj", "{F3E37F69-8664-48A3-B1A3-145148487785}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSTSBuildTaskTS", "VSTSBuildTaskTS\VSTSBuildTaskTS.csproj", "{FE369FF8-3A19-4815-9777-D1CC3CAA45ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{F3E37F69-8664-48A3-B1A3-145148487785}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3E37F69-8664-48A3-B1A3-145148487785}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3E37F69-8664-48A3-B1A3-145148487785}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE369FF8-3A19-4815-9777-D1CC3CAA45ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE369FF8-3A19-4815-9777-D1CC3CAA45ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE369FF8-3A19-4815-9777-D1CC3CAA45ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE369FF8-3A19-4815-9777-D1CC3CAA45ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

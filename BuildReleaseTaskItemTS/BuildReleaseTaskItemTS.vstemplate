@@ -5,8 +5,8 @@
     <Description>Creates a new custom TypeScript task for use with Visual Studio Team Services.  Can be used for build, release or both</Description>
     <Icon>VSOE.ico</Icon>
     <TemplateID>9e1430e7-8d12-4592-af2f-9746b702e35e</TemplateID>
-    <ProjectType>TypeScript</ProjectType>
-    <AppliesTo>Web,JavaScript</AppliesTo>
+    <ProjectType>CSharp</ProjectType>
+    <AppliesTo>Web,JavaScript,TypeScript</AppliesTo>
     <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
     <DefaultName>BuildReleaseCustomTaskTS</DefaultName>
@@ -15,8 +15,8 @@
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
   </TemplateData>
   <TemplateContent>
-    <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\$fileinputname$.ts">task.ts</ProjectItem>
-    <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\task.json">task.json</ProjectItem>
-    <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\icon.png">icon.png</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="src\$fileinputname$\task.ts">task.ts</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="src\$fileinputname$\task.json">task.json</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="src\$fileinputname$\icon.png">icon.png</ProjectItem>
   </TemplateContent>
 </VSTemplate>

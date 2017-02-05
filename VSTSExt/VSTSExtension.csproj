@@ -55,7 +55,7 @@
     <None Include=".tfignore" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="src\module\app.ts" />
+    <TypeScriptCompile Include="src\$fileinputname$\app.ts" />
   </ItemGroup>
   <ItemGroup>
     <None Include="vss-extension.json" />

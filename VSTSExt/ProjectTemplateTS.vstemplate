@@ -1,6 +1,6 @@
 ﻿<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
   <TemplateData>
-    <Name>Visual Studio Team Services Extension</Name>
+    <Name>Visual Studio Team Services Hub Extension</Name>
     <Description>Quick project starter that allows you to start building a VSTS extension.</Description>
     <ProjectType>TypeScript</ProjectType>
     <ProjectSubType>
@@ -39,7 +39,7 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="TestSpec.js">TestSpec.js</ProjectItem>
       </Folder>
       <Folder Name="src" TargetFolderName="src">
-        <Folder Name="my-module" TargetFolderName="module" >
+        <Folder Name="my-module" TargetFolderName="$fileinputname$" >
           <ProjectItem ReplaceParameters="true" TargetFileName="app.ts">app.ts</ProjectItem>
         </Folder>
         <ProjectItem ReplaceParameters="true" TargetFileName="VSS.SDK.js">VSS.SDK.js</ProjectItem>

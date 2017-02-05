@@ -13,12 +13,15 @@
     "jasmine": "^2.5.1",
     "rimraf": "^2.5.4",
     "tfx-cli": "^0.3.45",
-    "typescript": "^2.2.0"
+    "typescript": "^2.2.0",
+    "fs": "*"
   },
   "dependencies": {
     "@types/jquery": "^2.0.34",
     "@types/q": "0.0.32",
-    "vsts-task-sdk": "^0.6.4"
+    "@types/node": "*",
+    "vsts-task-sdk": "*",
+    "vsts-task-lib": "*"
   },
   "name": "",
   "private": true,

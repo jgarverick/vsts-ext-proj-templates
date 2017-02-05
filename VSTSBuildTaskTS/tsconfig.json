@@ -6,10 +6,10 @@
     "rootDir": "src/",
     "outDir": "dist/",
     "types": [
-      "vss-web-extension-sdk"
+      "vsts-task-lib"
     ]
   },
   "files": [
-    "src/my-module/app.ts"
+    "ExampleTask/task.ts"
   ]
 }

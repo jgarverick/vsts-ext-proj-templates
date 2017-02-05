@@ -11,11 +11,12 @@
     "grunt-exec": "*",
     "rimraf": "^2.5.4",
     "tfx-cli": "^0.3.45",
-    "typescript": "^2.1.4"
+    "typescript": "^2.2.0"
   },
   "dependencies": {
     "@types/jquery": "^2.0.34",
     "@types/q": "0.0.32",
+    "@types/node": "*",
     "vss-web-extension-sdk": "^2.109.1"
   },
   "name": "",
