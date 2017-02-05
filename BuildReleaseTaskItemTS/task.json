@@ -6,7 +6,7 @@
   "helpMarkDown": "[More Information](https://url.to/yourmarkdown)",
   "category": "Utility",
   "visibility": [
-    "Build", 
+    "Build",
     "Release"
   ],
   "author": "$registeredorganization$",
@@ -40,10 +40,9 @@
   ],
   "instanceNameFormat": "$fileinputname$",
   "execution": {
-    "PowerShell3": {
-      "target": "$(currentDirectory)\\$fileinputname$.ps1",
-      "argumentFormat": "",
-      "workingDirectory": "$(currentDirectory)"
+    "Node": {
+      "target": "task.js",
+      "argumentFormat": ""
     }
   }
 }

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Visual Studio Team Services Build Task Project</Name>
+    <Description>Creates a custom VSTS Build Task</Description>
+    <Icon>VSOE.ico</Icon>
+    <ProjectType>TypeScript</ProjectType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>VSTSBuildTaskTS</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" >gruntfile.js</ProjectItem>
+      <ProjectItem ReplaceParameters="true" >package.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" >packages.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName=".gitignore">.gitignore</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName=".tfignore">.tfignore</ProjectItem>
+      <ProjectItem ReplaceParameters="true" >vss-extension.json</ProjectItem>
+      <ProjectItem TargetFileName="settings.tfx.json">settings.tfx.json</ProjectItem>
+      <ProjectItem TargetFileName="tsconfig.json">tsconfig.json</ProjectItem>
+      <Folder Name=".vscode">
+        <ProjectItem ReplaceParameters="true" >tasks.json</ProjectItem>
+      </Folder>
+      <Folder Name="img">
+        <ProjectItem TargetFileName="logo.png">logo.png</ProjectItem>
+      </Folder>
+      <Folder Name="src">
+      <Folder Name="ExampleTask" TargetFolderName="$fileinputname$">
+        <ProjectItem ReplaceParameters="true" TargetFileName="task.ts" >task.ts</ProjectItem>
+        <ProjectItem ReplaceParameters="true" >icon.png</ProjectItem>
+        <ProjectItem ReplaceParameters="true" >task.json</ProjectItem>
+      </Folder>
+      </Folder>
+      <Folder Name="test">
+        <ProjectItem ReplaceParameters="true" >TestSpec.js</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
