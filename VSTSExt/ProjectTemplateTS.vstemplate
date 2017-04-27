@@ -19,6 +19,7 @@
       <ProjectItem ReplaceParameters="true" TargetFileName="package.json">package.json</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="settings.tfx.json">settings.tfx.json</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="tsconfig.json">tsconfig.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true">typings.json</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName=".gitignore">.gitignore</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName=".tfignore">.tfignore</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="gruntfile.js">gruntfile.js</ProjectItem>
@@ -39,7 +40,7 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="TestSpec.js">TestSpec.js</ProjectItem>
       </Folder>
       <Folder Name="src" TargetFolderName="src">
-        <Folder Name="my-module" TargetFolderName="$fileinputname$" >
+        <Folder Name="my-module" >
           <ProjectItem ReplaceParameters="true" TargetFileName="app.ts">app.ts</ProjectItem>
         </Folder>
         <ProjectItem ReplaceParameters="true" TargetFileName="VSS.SDK.js">VSS.SDK.js</ProjectItem>

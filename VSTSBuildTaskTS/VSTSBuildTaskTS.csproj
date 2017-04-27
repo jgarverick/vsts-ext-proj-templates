@@ -73,6 +73,7 @@
     <None Include="readme.md" />
     <None Include="settings.tfx.json" />
     <None Include="tsconfig.json" />
+    <None Include="typings.json" />
     <None Include="vss-extension.json" />
   </ItemGroup>
   <ItemGroup>

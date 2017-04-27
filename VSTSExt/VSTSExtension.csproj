@@ -55,13 +55,14 @@
     <None Include=".tfignore" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="src\$fileinputname$\app.ts" />
+    <TypeScriptCompile Include="src\my-module\app.ts" />
   </ItemGroup>
   <ItemGroup>
     <None Include="vss-extension.json" />
     <None Include="settings.tfx.json" />
     <None Include="gruntfile.js" />
     <None Include="tsconfig.json" />
+    <None Include="typings.json" />
   </ItemGroup>
 
 

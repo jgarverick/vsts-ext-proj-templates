@@ -6,7 +6,8 @@
     "rootDir": "src/",
     "outDir": "dist/",
     "types": [
-      "vss-web-extension-sdk"
+      "vss-web-extension-sdk",
+      "q"
     ]
   },
   "files": [
