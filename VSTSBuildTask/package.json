@@ -14,7 +14,7 @@
     "ncp": "^2.0.0",
     "rimraf": "^2.6.1",
     "tfx-cli": "^0.3.49",
-    "typescript": "^2.3.0"
+    "typescript": "^2.3.2"
   },
   "dependencies": {
     "@types/jquery": "^2.0.34",

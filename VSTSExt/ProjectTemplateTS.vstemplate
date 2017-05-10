@@ -19,6 +19,7 @@
       <ProjectItem ReplaceParameters="true" TargetFileName="package.json">package.json</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="settings.tfx.json">settings.tfx.json</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="tsconfig.json">tsconfig.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="tslint.json">tslint.json</ProjectItem>
       <ProjectItem ReplaceParameters="true">typings.json</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName=".gitignore">.gitignore</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName=".tfignore">.tfignore</ProjectItem>
@@ -43,7 +44,6 @@
         <Folder Name="my-module" >
           <ProjectItem ReplaceParameters="true" TargetFileName="app.ts">app.ts</ProjectItem>
         </Folder>
-        <ProjectItem ReplaceParameters="true" TargetFileName="VSS.SDK.js">VSS.SDK.js</ProjectItem>
       </Folder>
       <ProjectItem ReplaceParameters="false" TargetFileName="readme.md">readme.md</ProjectItem>
     </Project>

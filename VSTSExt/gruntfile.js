@@ -14,7 +14,7 @@ module.exports = function (grunt) {
                 stderr: true
             },
             update: {
-                command: "npm up --save-dev",
+                command: "npm run build",
                 stdout: true,
                 stderr: true
             },

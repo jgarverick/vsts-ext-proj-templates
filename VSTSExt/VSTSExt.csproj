@@ -77,6 +77,7 @@
     <None Include="AssemblyInfo.cs" />
     <None Include="package.json" />
     <None Include="settings.tfx.json" />
+    <None Include="tslint.json" />
     <None Include="tsconfig.json" />
     <None Include="typings.json" />
     <None Include="VSTSExtension.csproj">
@@ -110,7 +111,6 @@
     <Content Include="gruntfile.js" />
     <Content Include="static\images\logo.PNG" />
     <Content Include="static\index.html" />
-    <Content Include="src\VSS.SDK.js" />
     <Content Include="test\TestSpec.js" />
     <Content Include="VSOE.ico" />
   </ItemGroup>

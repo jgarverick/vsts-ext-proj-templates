@@ -1,4 +1,4 @@
-﻿ /// <reference types="vss-web-extension-sdk" />
+﻿ // <reference types="vss-web-extension-sdk" />
 
 class Greeter {
     element: HTMLElement;

@@ -47,7 +47,6 @@
     <Content Include="static\css\app.css" />
     <Content Include="static\images\logo.png" />
     <Content Include="static\index.html" />
-    <Content Include="src\VSS.SDK.js" />
     <Content Include="test\TestSpec.js" />
     <None Include="readme.md" />
     <None Include="package.json"/>
@@ -63,6 +62,7 @@
     <None Include="gruntfile.js" />
     <None Include="tsconfig.json" />
     <None Include="typings.json" />
+    <None Include="tslint.json" />
   </ItemGroup>
 
 
