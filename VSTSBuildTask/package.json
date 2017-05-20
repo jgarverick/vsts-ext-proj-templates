@@ -9,11 +9,12 @@
     "grunt": "^1.0.0",
     "grunt-contrib-copy": "*",
     "grunt-contrib-jasmine": "*",
-    "grunt-exec": "*",
-    "jasmine": "^2.5.1",
-    "rimraf": "^2.5.4",
-    "tfx-cli": "^0.3.45",
-    "typescript": "^2.2.0"
+    "grunt-exec": "^2.0.0",
+    "jasmine": "^2.6.0",
+    "ncp": "^2.0.0",
+    "rimraf": "^2.6.1",
+    "tfx-cli": "^0.3.49",
+    "typescript": "^2.3.2"
   },
   "dependencies": {
     "@types/jquery": "^2.0.34",

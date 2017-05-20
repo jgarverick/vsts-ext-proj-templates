@@ -57,6 +57,8 @@
     <None Include="img\logo.png"/>
     <None Include="settings.tfx.json"/>
     <None Include="tsconfig.json"/>
+    <None Include="typings.json" />
+    <None Include="tslint.json" />
     <None Include=".gitignore" />
     <None Include=".tfignore" />
 		<Compile Include="Properties\AssemblyInfo.cs" />

@@ -6,10 +6,21 @@
     "rootDir": "src/",
     "outDir": "dist/",
     "types": [
-      "vss-web-extension-sdk"
+      "vss-web-extension-sdk",
+      "q"
+    ],
+
+    "lib": [
+      "dom",
+      "es5",
+      "es2015.promise"
     ]
   },
   "files": [
-    "src/my-module/app.ts"
+    "src/app.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "typings"
   ]
 }

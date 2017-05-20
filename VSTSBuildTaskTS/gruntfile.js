@@ -9,7 +9,7 @@ module.exports = function (grunt) {
         settings: grunt.file.readJSON("settings.tfx.json"),
         exec: {
             update: {
-                command: "npm up --save-dev",
+                command: "npm run build",
                 stdout: true,
                 stderr: true
             },
