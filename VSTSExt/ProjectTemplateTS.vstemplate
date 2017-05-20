@@ -35,6 +35,7 @@
         </Folder>
         <Folder Name="images" TargetFolderName="images">
           <ProjectItem ReplaceParameters="true" TargetFileName="logo.png">logo.png</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="screen1.png">screen1.png</ProjectItem>
         </Folder>
         <ProjectItem ReplaceParameters="true" TargetFileName="index.html">index.html</ProjectItem>
       </Folder>
@@ -46,6 +47,8 @@
           <ProjectItem ReplaceParameters="true" TargetFileName="app.ts">app.ts</ProjectItem>
       </Folder>
       <ProjectItem ReplaceParameters="false" TargetFileName="readme.md">readme.md</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="overview.md">overview.md</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="license.md">license.md</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>

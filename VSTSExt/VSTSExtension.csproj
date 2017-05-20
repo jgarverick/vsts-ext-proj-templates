@@ -12,7 +12,7 @@
 		<AssemblyName>$safeprojectname$</AssemblyName>
 		<TargetFrameworkVersion>v$targetframeworkversion$</TargetFrameworkVersion>
 		<FileAlignment>512</FileAlignment>
-    <TypeScriptToolsVersion>2.0.6</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>2.2</TypeScriptToolsVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort>44300</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
@@ -43,9 +43,12 @@
   <ItemGroup>
     <Content Include="static\css\app.css" />
     <Content Include="static\images\logo.png" />
+     <Content Include="static\images\screen1.png" />
     <Content Include="static\index.html" />
     <Content Include="test\TestSpec.js" />
     <None Include="readme.md" />
+    <None Include="overview.md" />
+    <None Include="license.md" />
     <None Include="package.json"/>
     <Content Include="web.config" />
     <None Include="web.Debug.config">
@@ -64,6 +67,8 @@
     <None Include="typings.json" />
     <None Include="tslint.json" />
     <None Include="webpack.config.js" />
+  <None Include=".tfignore" />
+  <None Include=".gitignore" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Data.DataSetExtensions" />

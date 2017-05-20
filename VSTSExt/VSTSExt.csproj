@@ -73,10 +73,13 @@
     <Content Include=".tfignore">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
+    <Content Include="static\images\Screen1.png" />
     <Content Include="webpack.config.js" />
     <None Include=".vscode\tasks.json" />
     <None Include="AssemblyInfo.cs" />
     <None Include="package.json" />
+    <None Include="overview.md" />
+    <None Include="license.md" />
     <None Include="tslint.json" />
     <None Include="tsconfig.json" />
     <None Include="typings.json" />
