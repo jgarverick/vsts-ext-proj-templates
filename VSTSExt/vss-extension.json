@@ -1,13 +1,14 @@
 {
   "manifestVersion": 1,
-  "id": "sample-extension",
-  "version": "0.1.0",
-  "name": "Sample Extension",
-  "scopes": [ "vso.work", "vso.work_write" ],
-  "description": "This is the extension file from the contributions guide example on GitHub.  Feel free to add or remove sections as you see fit.",
-  "baseUri": "https://localhost",
-  "publisher": "fabrikam",
-  "public": false,
+  "id": "testext",
+  "version": "0.1.1",
+  "name": "TestExtension",
+  "scopes": [],
+  "description": "My extension makes hubs great again",
+  "publisher": "jgarverick",
+  "galleryFlags": [
+    "Preview"
+  ],
   "icons": {
     "default": "static/images/logo.png"
   },
@@ -16,28 +17,39 @@
       "id": "Microsoft.VisualStudio.Services"
     }
   ],
+  "demands": [
+    "api-version/3.0"
+  ],
   "tags": [
     "Sample"
   ],
+  "screenshots": [
+    {
+      "path": "static/images/screen1.png"
+    }
+  ],
+  "content": {
+    "license": {
+      "path": "license.md"
+    },
+    "details": {
+      "path": "overview.md"
+    }
+  },
   "links": {
-    "home": {
-      "uri": "https://bit.ly"
-    },
     "getstarted": {
-      "uri": "https://bit.ly"
-    },
-    "learn": {
       "uri": "https://bit.ly"
     },
     "support": {
       "uri": "https://bit.ly"
     },
-    "repository": {
-      "uri": "https://bit.ly"
-    },
     "issues": {
       "uri": "https://bit.ly"
     }
+  },
+  "repository": {
+    "type": "git",
+    "uri": "https://bit.ly"
   },
   "branding": {
     "color": "rgb(220, 235, 252)",
@@ -46,13 +58,19 @@
   "files": [
     {
       "path": "dist",
-      "addressable": true,
-      "packagePath": "/"
+      "addressable": true
     },
     {
-      "path": "static",
-      "addressable": true,
-      "packagePath": "/"
+      "path": "static/images/logo.png",
+      "addressable": true
+    },
+    {
+      "path": "static/css/app.css",
+      "addressable": true
+    },
+    {
+      "path": "static/index.html",
+      "addressable": true
     },
     {
       "path": "node_modules/vss-web-extension-sdk/lib",
@@ -65,15 +83,13 @@
   ],
   "contributions": [
     {
-      "id": "home",
-      "targets": [
-        "ms.vss-work-web.work-hub-group"
-      ],
+      "id": "testext",
+      "targets": ["ms.vss-releaseManagement-web.hub-group-rm","ms.vss-build-web.build-release-hub-group"],
       "type": "ms.vss-web.hub",
       "properties": {
-        "name": "Sample Contribution",
+        "name": "TestExtension",
         "order": 100,
-        "uri": "index.html"
+        "uri": "static/index.html"
       }
     }
   ]
