@@ -17,11 +17,15 @@
     <Project TargetFileName="VSTSExtension.csproj" File="VSTSExtension.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="vss-extension.json">vss-extension.json</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="package.json">package.json</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="settings.tfx.json">settings.tfx.json</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="tsconfig.json">tsconfig.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="tslint.json">tslint.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true">typings.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true">webpack.config.js</ProjectItem>
+      <ProjectItem ReplaceParameters="true">web.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true">web.Debug.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true">web.Release.config</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName=".gitignore">.gitignore</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName=".tfignore">.tfignore</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="gruntfile.js">gruntfile.js</ProjectItem>
       <Folder Name=".vscode" TargetFolderName=".vscode">
         <ProjectItem ReplaceParameters="true" TargetFileName="tasks.json">tasks.json</ProjectItem>
       </Folder>
@@ -31,6 +35,7 @@
         </Folder>
         <Folder Name="images" TargetFolderName="images">
           <ProjectItem ReplaceParameters="true" TargetFileName="logo.png">logo.png</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="screen1.png">screen1.png</ProjectItem>
         </Folder>
         <ProjectItem ReplaceParameters="true" TargetFileName="index.html">index.html</ProjectItem>
       </Folder>
@@ -39,12 +44,11 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="TestSpec.js">TestSpec.js</ProjectItem>
       </Folder>
       <Folder Name="src" TargetFolderName="src">
-        <Folder Name="my-module" TargetFolderName="$fileinputname$" >
           <ProjectItem ReplaceParameters="true" TargetFileName="app.ts">app.ts</ProjectItem>
-        </Folder>
-        <ProjectItem ReplaceParameters="true" TargetFileName="VSS.SDK.js">VSS.SDK.js</ProjectItem>
       </Folder>
       <ProjectItem ReplaceParameters="false" TargetFileName="readme.md">readme.md</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="overview.md">overview.md</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="license.md">license.md</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>

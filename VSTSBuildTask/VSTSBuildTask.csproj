@@ -93,6 +93,7 @@
     <None Include="ExampleTask\task.ps1" />
     <None Include="test\deploy\TestExample.ps1" />
     <None Include="test\deploy\TestExample.Tests.ps1" />
+    <None Include="typings.json" />
     <None Include="vss-extension.json" />
   </ItemGroup>
   <ItemGroup>
