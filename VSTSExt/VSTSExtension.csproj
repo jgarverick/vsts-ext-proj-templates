@@ -108,6 +108,8 @@
     <TypeScriptSourceMap>false</TypeScriptSourceMap>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
-
+  <PropertyGroup>
+    <PreBuildEvent>typings install &amp;&amp; npm up --save-dev &amp;&amp; npm run build</PreBuildEvent>
+  </PropertyGroup>
 
 </Project>
